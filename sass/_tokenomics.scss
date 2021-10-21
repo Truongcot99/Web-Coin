@@ -1,0 +1,138 @@
+.tokenomics {
+    position: relative;
+    padding-top: 80px;
+    background-color: #e8fefb;
+
+    @include breakpoint-down(md) {
+        padding-top: 60px;
+    }
+
+    &-container {
+        position: relative;
+    }
+
+    &-heading {
+        position: relative;
+        max-width: 800px;
+        margin: 0 auto;
+        text-align: center;
+        z-index: 2;
+    }
+
+    &-img {
+        position: relative;
+        z-index: 10;
+        img {
+            position: relative;
+            z-index: 10;
+            margin: 0 auto;
+        }
+
+        &:nth-child(3) {
+            margin-top: -100px;
+        }
+    }
+
+    .coin-1,
+    .coin-2,
+    .coin-3,
+    .coin-4,
+    .coin-5,
+    .coin-6,
+    .coin-7,
+    .coin-8 {
+        width: 100px;
+        position: absolute;
+        z-index: 1;
+
+        @include breakpoint-down(md) {
+            width: 80px;
+        }
+    }
+
+    .coin-1 {
+        top: 2%;
+        right: 26%;
+
+        @include breakpoint-down(md) {
+            top: -4%;
+            right: 32%;
+        }
+    }
+
+    .coin-2 {
+        top: 6%;
+        left: 26%;
+    }
+
+    .coin-3 {
+        left: 0;
+        bottom: 0;
+    }
+
+    .coin-4 {
+        right: 0;
+        bottom: 20%;
+    }
+
+    .coin-5 {
+        top: 24%;
+        left: 16%;
+    }
+
+    .coin-6 {
+        top: 40%;
+        right: 8%;
+
+        @include breakpoint-down(md) {
+            top: 59%;
+            right: 5%;
+        }
+    }
+
+    .coin-7 {
+        top: 16%;
+        left: 10%;
+    }
+
+    .coin-8 {
+        top: 50%;
+        right: 16%;
+
+        @include breakpoint-down(lg) {
+            top: 60%;
+            right: 0;
+        }
+    }
+
+    .BG41,
+    .BG42 {
+        position: absolute;
+        width: 360px;
+        height: 360px;
+
+        @include breakpoint-down(lg) {
+            width: 280px;
+            height: 280px;
+        }
+
+        @include breakpoint-down(md) {
+            width: 200px;
+        }
+    }
+
+    .BG41 {
+        top: 5%;
+        right: 0;
+
+        @include breakpoint-down(md) {
+            top: -5%;
+        }
+    }
+
+    .BG42 {
+        transform: rotate(180deg);
+        bottom: 0;
+        left: 0;
+    }
+}

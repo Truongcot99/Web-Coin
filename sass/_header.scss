@@ -1,0 +1,79 @@
+.header {
+    background-color: $header-background;
+    // position: fixed;
+    z-index: 9999;
+    // width: 100%;
+
+    &-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @include breakpoint-down(lg) {
+            display: block;
+        }
+    }
+
+    &-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &-logo {
+        width: 280px;
+        height: 86px;
+        object-fit: cover;
+
+        @include breakpoint-down(lg) {
+            width: 200px;
+        }
+    }
+
+    &-toggle {
+        span {
+            display: block;
+            width: 50px;
+            height: 3px;
+            background-color: black;
+
+            &:not(:last-child) {
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    &-menu {
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 0 40px;
+        transition: all 0.3s linear;
+
+        @include breakpoint-down(lg) {
+            display: block;
+            height: 0;
+            overflow: hidden;
+        }
+
+        &-link {
+            font-size: 3rem;
+            font-family: $font-heading, sans-serif;
+            line-height: 40px;
+            text-transform: uppercase;
+            color: black;
+
+            @include breakpoint-down(lg) {
+                font-size: 2.4rem;
+                padding: 10px 0;
+                display: block;
+            }
+        }
+    }
+
+    &-menu.active {
+        height: 100vh;
+    }
+
+}

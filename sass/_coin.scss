@@ -1,0 +1,145 @@
+.coin {
+    padding: 100px 0;
+    background-color: white;
+
+    @include breakpoint-down(md) {
+        padding: 60px 0;
+    }
+
+    &-item {
+        display: flex;
+        position: relative;
+        z-index: 10;
+
+        @include breakpoint-down(lg) {
+            flex-direction: column;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 100px;
+
+            @include breakpoint-down(lg) {
+                margin-bottom: 60px;
+            }
+        }
+
+        &:nth-child(1) {
+            align-items: flex-end;
+
+            @include breakpoint-down(lg) {
+                align-items: flex-start;
+            }
+            .coin-content {
+                padding: 0 100px;
+
+                @include breakpoint-down(lg) {
+                    align-items: flex-start;
+                    padding: 0;
+                }
+            }
+        }
+
+        &:nth-child(2) {
+            
+            @include breakpoint-down(lg) {
+                align-items: flex-start;
+                flex-direction: column-reverse;
+            }
+        }
+
+        &:nth-child(3) {
+            align-items: center;
+            .coin-content {
+                padding: 0 50px;
+
+                @include breakpoint-down(lg) {
+                    padding: 0;
+                }
+            }
+        }
+    }
+
+    &-content {
+        flex: 1;
+        z-index: 2;
+    }
+
+    &-list {
+        margin-left: 16px;
+    }
+
+    &-img {
+        position: relative;
+        z-index: 10;
+        width: 450px;
+        height: 450px;
+        flex-shrink: 0;
+
+        @include breakpoint-down(lg) {
+            margin: 0 auto;
+            margin-top: 30px;
+        }
+
+        @include breakpoint-down(md) {
+            width: 326px;
+            height: 326px;
+            margin-top: 20px;
+        }
+    }
+    .heading {
+        margin-bottom: 40px;
+
+        @include breakpoint-down(lg) {
+            margin-bottom: 20px;
+        }
+    }
+
+    .box--outline {
+        position: relative;
+        z-index: 10;
+        margin-right: 60px;
+
+        @include breakpoint-down(lg) {
+            margin: 0 auto;
+            margin-top: 20px;
+            width: 100%;
+        }
+    }
+
+    .BG31,
+    .BG32, 
+    .BG33 {
+        position: absolute;
+        z-index: 1;
+        width: 360px;
+        height: 360px;
+
+        @include breakpoint-down(lg) {
+            width: 280px;
+        }
+    }
+
+    .BG31 {
+        transform: rotate(90deg);
+        left: 0;
+    }
+    
+    .BG32 {
+        bottom: -20%;
+        right: 28%;
+
+        @include breakpoint-down(lg) {
+            bottom: -50%;
+        }
+    }
+
+    .BG33 {
+        bottom: -16%;
+        right: -12%;
+
+        @include breakpoint-down(lg) {
+            right: 0;
+            bottom: -8%;
+        }
+    }
+}

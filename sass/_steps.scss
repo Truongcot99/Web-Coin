@@ -1,0 +1,124 @@
+.steps {
+    padding: 60px 0;
+    background-color: #a5dfd9;
+
+    &-container {
+        padding-left: 30px;
+        margin: 0 auto;
+    }
+
+    &-item {
+        width: 300px;
+        min-height: 300px;
+        background-color: black;
+        border-radius: 10px;
+    } 
+
+    &-heading {
+        font-family: "Bungee";
+        font-size: 3.8rem;
+        line-height: 50px;
+        color: white;
+
+        @include breakpoint-down(md) {
+            font-size: 2.8rem;
+        }
+    }
+
+    &-content {
+        margin-bottom: 40px;
+    }
+
+    &-info {
+        position: relative;
+        padding: 108px 20px 40px 20px;
+
+        @include breakpoint-down(xl) {
+            margin-bottom: 40px;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border: 4px solid black;
+            border-radius: 10px;
+            top: -5%;
+            left: -5%;
+        }
+    }
+
+    &-text {
+        display: block;
+        font-size: 2.2rem;
+        line-height: 28px;
+        font-weight: 700;
+        color: white;
+    }
+
+    &-number {
+        font-size: 4rem;
+        color: white;
+        font-weight: 700;
+    }
+    
+    .btn {
+        position: relative;
+        font-size: 2.4rem;
+        color: black;
+        background-color: white;
+        border-radius: 100rem;
+
+        @include breakpoint-down(md) {
+            font-size: 2rem;
+        }
+
+        &::after {
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 100%;
+            border: 4px solid white;
+            border-radius: 100rem;
+            top: 15%;
+            left: 3%;
+        }
+    }
+
+    &-BG {
+        position: absolute;
+        width: 300px;
+        height: 300px;
+
+        @include breakpoint-down(lg) {
+            width: 240px;
+            height: 240px;
+        }
+
+        @include breakpoint-down(md) {
+            width: 200px;
+            height: 200px;
+        }
+    }
+
+    .BG11 {
+        top: 20%;
+        right: 8%;
+    }
+
+    .BG12 {
+        left: 0;
+        bottom: 0;
+    }
+
+    .BG43 {
+        right: 0;
+        bottom: 0;
+        transform: rotate(90deg);
+
+        @include breakpoint-down(lg) {
+            bottom: 24%;
+        }
+    }
+}

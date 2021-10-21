@@ -1,0 +1,129 @@
+.road-map {
+    padding-bottom: 60px;
+    background-color: white;
+
+    &-heading {
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
+    &-title {
+        font-size: 3.6rem;
+        margin-bottom: 16px;
+        font-weight: 700;
+
+        @include breakpoint-down(md) {
+            font-size: 2.4rem;
+        }
+    }
+
+    &-list {
+        list-style: none;
+        margin-left: 20px;
+
+        @include breakpoint-down(md) {
+            margin-left: 10px;
+        }
+
+        li {
+            margin-bottom: 12px;
+
+            span {
+                font-size: 1.7rem;
+                line-height: 20px;
+
+                @include breakpoint-down(md) {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+
+    &-item {
+        position: relative;
+
+        @include breakpoint-down(lg) {
+            margin-left: 40px;
+            padding-bottom: 40px;
+
+            &:not(:last-child) {
+                border-left: 2px dashed black;
+            }
+        } 
+    }
+
+    &-content {
+        padding: 0 60px;
+
+        @include breakpoint-down(lg) {
+            padding: 0 10px 0 30px;
+        }
+
+        &:nth-child(odd) {
+            border-right: 4px dashed black;
+
+            @include breakpoint-down(lg) {
+                border: none;
+            }
+        }
+    }
+
+    &-info {
+        background-color: #e8fefb;
+        border-radius: 40px;
+        word-wrap: break-word;
+        overflow: hidden;
+    }
+
+    &-time {
+        font-size: 3rem;
+        font-weight: 700;
+        text-align: center;
+        line-height: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: #e8fefb;
+        color: #ff9100;
+        top: 0;
+        left: 46%;
+
+
+        @include breakpoint-down(lg) {
+            font-size: 2rem;
+            width: 60px;
+            height: 60px;
+            left: -4%;
+            top: -1%;
+        }
+
+        @include breakpoint-down(md) {
+            left: -9%;
+            line-height: 24px;
+        }
+    }
+
+    &-img {
+        padding: 0 100px;
+
+        @include breakpoint-down(lg) {
+            padding: 0 20px;
+        }
+
+        img {
+            margin: 0 auto;
+        }
+    }
+
+    .space:nth-child(odd) {
+        border-right: 4px dashed black;
+
+        @include breakpoint-down(lg) {
+            border: none;
+        }
+    }
+}

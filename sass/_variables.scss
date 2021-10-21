@@ -1,0 +1,37 @@
+@font-face {
+    font-family: '[z] Arista';
+    font-display: swap;
+    src: url('../assets/Font/[z]\ Arista\ Light\ Trial.ttf') format('truetype');
+} 
+@font-face {
+    font-family: 'Arial';
+    font-display: swap;
+    src: url('../assets/Font/SVN-Arial\ Regular.ttf') format('truetype');
+} 
+
+@font-face {
+    font-family: 'Alata';
+    font-display: swap;
+    src: url('../assets/Font/Alata/Alata-Regular.ttf') format('truetype');
+} 
+
+@font-face {
+    font-family: 'Alegreya';
+    font-display: wrap;
+    src: url(../assets/Font/Alegreya/Alegreya-Italic-VariableFont_wght.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Bungee';
+    font-display: wrap;
+    src: url(../assets/Font/Bungee/Bungee-Regular.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Cuprum';
+    font-display: wrap;
+    src: url(../assets/Font/Cuprum/Cuprum-VariableFont_wght.ttf) format('truetype');
+}
+
+$font-family: 'Arial';
+$font-heading: '[z] Arista';
+$header-background: #a2e6e0;

@@ -1,0 +1,97 @@
+.total {
+    background-color: white;
+
+    &-container {
+        position: relative;
+        padding-top: 200px;
+        padding-bottom: 100px;
+    }
+
+    .box--outline {
+        position: relative;
+        z-index: 2;
+        width: 80%;
+        margin: 0 auto;
+        padding-bottom: 0;
+
+        @include breakpoint-down(md) {
+            width: 100%;
+        }
+    }
+
+    &-heading {
+        max-width: 520px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    &-img {
+        img {
+            object-fit: cover;
+        }
+    }
+
+    &-number {
+        font-family: Alegreya;
+        font-size: 4rem;
+        text-align: center;
+
+        @include breakpoint-down(md){
+            font-size: 3.2rem;
+        }
+    }
+
+    &-coin {
+        position: absolute;
+        width: 100px;
+        z-index: 1;
+
+        @include breakpoint-down(lg) {
+            width: 80px;
+        }
+    }
+
+    .coin-1 {
+        top: 2%;
+        left: 4%;
+
+        @include breakpoint-down(md) {
+            top: 0%;
+            left: 14%;
+        }
+    }
+
+    .coin-2 {
+        top: 20%;
+        left: 0;
+    }
+
+    .coin-3 {
+        top: 60%;
+    }
+
+    .coin-4 {
+        top: 10%;
+        left: 50%;
+
+        @include breakpoint-down(md) {
+            top: 13%;
+            left: 43%;
+        }
+    }
+
+    .coin-5 {
+        top: 5%;
+        right: 16%;
+    }
+
+    .coin-6 {
+        top: 30%;
+        right: 0;
+    }
+
+    .coin-7 {
+        top: 80%;
+        right: 2%;
+    }
+}
