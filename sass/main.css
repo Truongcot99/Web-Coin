@@ -1175,7 +1175,7 @@ body.noscroll {
 }
 
 .total .coin5 {
-  left: 5%;
+  top: 5%;
   right: 16%;
   -webkit-animation: slideUp 8s infinite;
           animation: slideUp 8s infinite;

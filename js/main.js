@@ -17,7 +17,7 @@ $(document).ready(function () {
         $('.coin-5').css("left", (x / 47) + '%').css("top", (y / 18) + '%');
         $('.coin-6').css("right", (x / 17) + '%').css("top", (y / 6) + '%');
         $('.coin-7').css("right", (x / 9) + '%').css("top", (y / 13) + '%');
-        $('.coin-8').css("right", (x / 65) + '%').css("top", (y / 3) + '%');
+        $('.coin-8').css("right", (x / 65) + '%').css("top", (y / 10) + '%');
     })
 
     $('.total-container').mousemove(function (e) {
