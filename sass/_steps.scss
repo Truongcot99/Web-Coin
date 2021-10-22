@@ -105,11 +105,13 @@
     .BG11 {
         top: 20%;
         right: 8%;
+        animation: slideRight 6s infinite;
     }
 
     .BG12 {
         left: 0;
         bottom: 0;
+        animation: slideRight 9s infinite;
     }
 
     .BG43 {

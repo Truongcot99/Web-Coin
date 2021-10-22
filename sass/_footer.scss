@@ -100,29 +100,36 @@
 
     .coin-11 {
         right: 10%;
+        animation: slide 15s infinite;
     }
 
     .coin-12 {
         bottom: 20%;
         left: 15%;
+        animation: slide 12s infinite;
     }
     .coin-21 {
-        bottom: 0;
+        bottom: 10%;
         left: 0;
+        animation: slide 17s infinite;
     }
 
     .coin-22 {
         top: 30%;
-        right: 16%;;
+        right: 16%;
+        animation: slideUp 10s infinite;
+
     }
 
     .coin-31 {
         bottom: 5%;
         right: 5%;
+        animation: slide 12s infinite;
     }
 
     .coin-32 {
         left: 5%;
         top: 10%;
+        animation: slideUp 8s infinite;
     }
 }

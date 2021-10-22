@@ -245,49 +245,153 @@ body.noscroll {
   }
 }
 
-@-webkit-keyframes slide {
+@-webkit-keyframes slideRotate {
   0% {
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
-  }
-  25% {
-    -webkit-transform: translateX(4px);
-            transform: translateX(4px);
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
   }
   50% {
-    -webkit-transform: translatex(8px);
-            transform: translatex(8px);
-  }
-  75% {
-    -webkit-transform: translateX(12px);
-            transform: translateX(12px);
+    -webkit-transform: rotate(30deg);
+            transform: rotate(30deg);
   }
   100% {
-    -webkit-transform: translateX(16px);
-            transform: translateX(16px);
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+}
+
+@keyframes slideRotate {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  50% {
+    -webkit-transform: rotate(30deg);
+            transform: rotate(30deg);
+  }
+  100% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+}
+
+@-webkit-keyframes slideRotateY45 {
+  0% {
+    -webkit-transform: rotateY(0);
+            transform: rotateY(0);
+  }
+  50% {
+    -webkit-transform: rotateY(30deg);
+            transform: rotateY(30deg);
+  }
+  100% {
+    -webkit-transform: rotateY(0);
+            transform: rotateY(0);
+  }
+}
+
+@keyframes slideRotateY45 {
+  0% {
+    -webkit-transform: rotateY(0);
+            transform: rotateY(0);
+  }
+  50% {
+    -webkit-transform: rotateY(30deg);
+            transform: rotateY(30deg);
+  }
+  100% {
+    -webkit-transform: rotateY(0);
+            transform: rotateY(0);
+  }
+}
+
+@-webkit-keyframes slide {
+  0% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  50% {
+    -webkit-transform: translate(12px, 30px);
+            transform: translate(12px, 30px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
   }
 }
 
 @keyframes slide {
   0% {
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
-  }
-  25% {
-    -webkit-transform: translateX(4px);
-            transform: translateX(4px);
+    -webkit-transform: translate(0);
+            transform: translate(0);
   }
   50% {
-    -webkit-transform: translatex(8px);
-            transform: translatex(8px);
+    -webkit-transform: translate(12px, 30px);
+            transform: translate(12px, 30px);
   }
-  75% {
+  100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+@-webkit-keyframes slideUp {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(12px);
+            transform: translateY(12px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(12px);
+            transform: translateY(12px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+@-webkit-keyframes slideRight {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  50% {
     -webkit-transform: translateX(12px);
             transform: translateX(12px);
   }
   100% {
-    -webkit-transform: translateX(16px);
-            transform: translateX(16px);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes slideRight {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  50% {
+    -webkit-transform: translateX(12px);
+            transform: translateX(12px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 }
 
@@ -546,6 +650,8 @@ body.noscroll {
           transform: rotate(75deg);
   left: 0;
   top: 0;
+  -webkit-animation: slideRight 6s infinite;
+          animation: slideRight 6s infinite;
 }
 
 @media (max-width: 992px) {
@@ -556,6 +662,8 @@ body.noscroll {
 
 .hero .BG12 {
   bottom: 4%;
+  -webkit-animation: slideUp 7s infinite;
+          animation: slideUp 7s infinite;
 }
 
 @media (max-width: 992px) {
@@ -570,6 +678,8 @@ body.noscroll {
   right: 0;
   -webkit-transform: rotate(75deg);
           transform: rotate(75deg);
+  -webkit-animation: slideRight 8s infinite;
+          animation: slideRight 8s infinite;
 }
 
 @media (max-width: 992px) {
@@ -806,8 +916,6 @@ body.noscroll {
 }
 
 .tokenomics-img img {
-  position: relative;
-  z-index: 10;
   margin: 0 auto;
 }
 
@@ -844,6 +952,8 @@ body.noscroll {
 .tokenomics .coin-1 {
   top: 2%;
   right: 26%;
+  -webkit-animation: slideUp 8s infinite;
+          animation: slideUp 8s infinite;
 }
 
 @media (max-width: 767px) {
@@ -856,43 +966,57 @@ body.noscroll {
 .tokenomics .coin-2 {
   top: 6%;
   left: 26%;
+  -webkit-animation: slideRotate 6s infinite;
+          animation: slideRotate 6s infinite;
 }
 
 .tokenomics .coin-3 {
   left: 0;
   bottom: 0;
+  -webkit-animation: slideRotate 8s infinite;
+          animation: slideRotate 8s infinite;
 }
 
 .tokenomics .coin-4 {
   right: 0;
   bottom: 20%;
+  -webkit-animation: slideRotate 4s infinite;
+          animation: slideRotate 4s infinite;
 }
 
 .tokenomics .coin-5 {
   top: 24%;
   left: 16%;
+  -webkit-animation: slideUp 7s infinite;
+          animation: slideUp 7s infinite;
 }
 
 .tokenomics .coin-6 {
   top: 40%;
   right: 8%;
+  -webkit-animation: slideRotate 5s infinite;
+          animation: slideRotate 5s infinite;
 }
 
 @media (max-width: 767px) {
   .tokenomics .coin-6 {
     top: 59%;
-    right: 5%;
+    left: 5%;
   }
 }
 
 .tokenomics .coin-7 {
   top: 16%;
   left: 10%;
+  -webkit-animation: slideRotate 6s infinite;
+          animation: slideRotate 6s infinite;
 }
 
 .tokenomics .coin-8 {
   top: 50%;
   right: 16%;
+  -webkit-animation: slideRotate 9s infinite;
+          animation: slideRotate 9s infinite;
 }
 
 @media (max-width: 992px) {
@@ -907,6 +1031,7 @@ body.noscroll {
   position: absolute;
   width: 360px;
   height: 360px;
+  z-index: 1;
 }
 
 @media (max-width: 992px) {
@@ -953,8 +1078,6 @@ body.noscroll {
 }
 
 .total .box--outline {
-  position: relative;
-  z-index: 2;
   width: 80%;
   margin: 0 auto;
   padding-bottom: 0;
@@ -967,9 +1090,16 @@ body.noscroll {
 }
 
 .total-heading {
+  position: relative;
+  z-index: 10;
   max-width: 520px;
   margin: 0 auto;
   text-align: center;
+}
+
+.total-img {
+  position: relative;
+  z-index: 10;
 }
 
 .total-img img {
@@ -978,6 +1108,8 @@ body.noscroll {
 }
 
 .total-number {
+  position: relative;
+  z-index: 10;
   font-family: Alegreya;
   font-size: 4rem;
   text-align: center;
@@ -1001,52 +1133,66 @@ body.noscroll {
   }
 }
 
-.total .coin-1 {
+.total .coin1 {
   top: 2%;
   left: 4%;
+  -webkit-animation: slideRotateY45 5s infinite;
+          animation: slideRotateY45 5s infinite;
 }
 
 @media (max-width: 767px) {
-  .total .coin-1 {
+  .total .coin1 {
     top: 0%;
     left: 14%;
   }
 }
 
-.total .coin-2 {
+.total .coin2 {
   top: 20%;
   left: 0;
+  -webkit-animation: slideRotateY45 7s infinite;
+          animation: slideRotateY45 7s infinite;
 }
 
-.total .coin-3 {
+.total .coin3 {
   top: 60%;
+  -webkit-animation: slideUp 12s infinite;
+          animation: slideUp 12s infinite;
 }
 
-.total .coin-4 {
+.total .coin4 {
   top: 10%;
   left: 50%;
+  -webkit-animation: slideRotateY45 6s infinite;
+          animation: slideRotateY45 6s infinite;
 }
 
 @media (max-width: 767px) {
-  .total .coin-4 {
+  .total .coin4 {
     top: 13%;
     left: 43%;
   }
 }
 
-.total .coin-5 {
-  top: 5%;
+.total .coin5 {
+  left: 5%;
   right: 16%;
+  -webkit-animation: slideUp 8s infinite;
+          animation: slideUp 8s infinite;
 }
 
-.total .coin-6 {
+.total .coin6 {
   top: 30%;
   right: 0;
+  -webkit-animation: slideRotateY45 5s infinite;
+          animation: slideRotateY45 5s infinite;
 }
 
-.total .coin-7 {
+.total .coin7 {
   top: 80%;
   right: 2%;
+  -webkit-animation: slideUp 11s infinite;
+          animation: slideUp 11s infinite;
 }
 
 .road-map {
@@ -1321,11 +1467,15 @@ body.noscroll {
 .steps .BG11 {
   top: 20%;
   right: 8%;
+  -webkit-animation: slideRight 6s infinite;
+          animation: slideRight 6s infinite;
 }
 
 .steps .BG12 {
   left: 0;
   bottom: 0;
+  -webkit-animation: slideRight 9s infinite;
+          animation: slideRight 9s infinite;
 }
 
 .steps .BG43 {
@@ -1455,30 +1605,42 @@ body.noscroll {
 
 .footer .coin-11 {
   right: 10%;
+  -webkit-animation: slide 15s infinite;
+          animation: slide 15s infinite;
 }
 
 .footer .coin-12 {
   bottom: 20%;
   left: 15%;
+  -webkit-animation: slide 12s infinite;
+          animation: slide 12s infinite;
 }
 
 .footer .coin-21 {
-  bottom: 0;
+  bottom: 10%;
   left: 0;
+  -webkit-animation: slide 17s infinite;
+          animation: slide 17s infinite;
 }
 
 .footer .coin-22 {
   top: 30%;
   right: 16%;
+  -webkit-animation: slideUp 10s infinite;
+          animation: slideUp 10s infinite;
 }
 
 .footer .coin-31 {
   bottom: 5%;
   right: 5%;
+  -webkit-animation: slide 12s infinite;
+          animation: slide 12s infinite;
 }
 
 .footer .coin-32 {
   left: 5%;
   top: 10%;
+  -webkit-animation: slideUp 8s infinite;
+          animation: slideUp 8s infinite;
 }
 /*# sourceMappingURL=main.css.map */
