@@ -28,7 +28,7 @@
         }
 
         @include breakpoint-down(md) {
-            width: 180px;
+            width: 160px;
         }
     }
 
@@ -119,12 +119,16 @@
         right: 16%;
         animation: slideUp 10s infinite;
 
+        @include breakpoint-down(md) {
+            top: 48%;
+        }
+
     }
 
     .coin-31 {
         bottom: 5%;
         right: 5%;
-        animation: slide 12s infinite;
+        animation: slide 9s infinite;
     }
 
     .coin-32 {

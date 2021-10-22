@@ -49,16 +49,20 @@
         position: absolute;
         width: 100px;
         z-index: 1;
+        transition: transform 0.6s linear;
 
         @include breakpoint-down(lg) {
             width: 80px;
+        }
+
+        @include breakpoint-down(md) {
+            width: 60px;
         }
     }
 
     .coin1 {
         top: 2%;
         left: 4%;
-        animation: slideRotateY45 5s infinite;
 
         @include breakpoint-down(md) {
             top: 0%;
@@ -69,21 +73,18 @@
     .coin2 {
         top: 20%;
         left: 0;
-        animation: slideRotateY45 7s infinite;
     }
 
     .coin3 {
         top: 60%;
-        animation: slideUp 12s infinite;
     }
 
     .coin4 {
         top: 10%;
         left: 50%;
-        animation: slideRotateY45 6s infinite;
 
         @include breakpoint-down(md) {
-            top: 13%;
+            top: 78%;
             left: 43%;
         }
     }
@@ -91,18 +92,14 @@
     .coin5 {
         top: 5%;
         right: 16%;
-        animation: slideUp 8s infinite;
     }
-
     .coin6 {
         top: 30%;
         right: 0;
-        animation: slideRotateY45 5s infinite;
     }
 
     .coin7 {
         top: 80%;
         right: 2%;
-        animation: slideUp 11s infinite;
     }
 }

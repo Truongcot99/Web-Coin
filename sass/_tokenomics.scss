@@ -1,3 +1,4 @@
+
 .tokenomics {
     position: relative;
     padding-top: 80px;
@@ -31,27 +32,24 @@
         }
     }
 
-    .coin-1,
-    .coin-2,
-    .coin-3,
-    .coin-4,
-    .coin-5,
-    .coin-6,
-    .coin-7,
-    .coin-8 {
+    .tokenomics-coin {
         width: 100px;
         position: absolute;
         z-index: 1;
+        transition:transform 0.5s linear;
+
+        @include breakpoint-down(lg) {
+            width: 80px;
+        }
 
         @include breakpoint-down(md) {
-            width: 80px;
+            width: 60px;
         }
     }
 
     .coin-1 {
         top: 2%;
         right: 26%;
-        animation: slideUp 8s infinite;
 
         @include breakpoint-down(md) {
             top: -4%;
@@ -62,51 +60,43 @@
     .coin-2 {
         top: 6%;
         left: 26%;
-        animation: slideRotate 6s infinite;
     }
 
     .coin-3 {
         left: 0;
         bottom: 0;
-        animation: slideRotate 8s infinite;
     }
 
     .coin-4 {
         right: 0;
         bottom: 20%;
-        animation: slideRotate 4s infinite;
     }
 
     .coin-5 {
         top: 24%;
         left: 16%;
-        animation: slideUp 7s infinite;
     }
 
     .coin-6 {
         top: 40%;
         right: 8%;
-        animation: slideRotate 5s infinite;
 
         @include breakpoint-down(md) {
             top: 59%;
-            left: 5%;
         }
     }
 
     .coin-7 {
         top: 16%;
         left: 10%;
-        animation: slideRotate 6s infinite;
     }
 
     .coin-8 {
         top: 50%;
         right: 16%;
-        animation: slideRotate 9s infinite;
 
         @include breakpoint-down(lg) {
-            top: 60%;
+            top: 76%;
             right: 0;
         }
     }
