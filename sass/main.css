@@ -650,8 +650,8 @@ body.noscroll {
           transform: rotate(75deg);
   left: 0;
   top: 0;
-  -webkit-animation: slideRight 6s infinite;
-          animation: slideRight 6s infinite;
+  -webkit-animation: slideRight 4s infinite;
+          animation: slideRight 4s infinite;
 }
 
 @media (max-width: 992px) {
@@ -662,8 +662,8 @@ body.noscroll {
 
 .hero .BG12 {
   bottom: 4%;
-  -webkit-animation: slideUp 7s infinite;
-          animation: slideUp 7s infinite;
+  -webkit-animation: slideUp 6s infinite;
+          animation: slideUp 6s infinite;
 }
 
 @media (max-width: 992px) {
@@ -678,8 +678,8 @@ body.noscroll {
   right: 0;
   -webkit-transform: rotate(75deg);
           transform: rotate(75deg);
-  -webkit-animation: slideRight 8s infinite;
-          animation: slideRight 8s infinite;
+  -webkit-animation: slideRight 7s infinite;
+          animation: slideRight 7s infinite;
 }
 
 @media (max-width: 992px) {

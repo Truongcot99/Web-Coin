@@ -118,7 +118,7 @@
         transform: rotate(75deg);
         left: 0;
         top: 0;
-        animation: slideRight 6s infinite;
+        animation: slideRight 4s infinite;
 
         @include breakpoint-down(lg) {
             top: -20%;
@@ -127,7 +127,7 @@
 
     .BG12 {
         bottom: 4%;
-        animation: slideUp 7s infinite;
+        animation: slideUp 6s infinite;
         @include breakpoint-down(lg) {
             bottom: 40%;
             left: 0;
@@ -138,7 +138,7 @@
         top: 16%;
         right: 0;
         transform: rotate(75deg);
-        animation: slideRight 8s infinite;
+        animation: slideRight 7s infinite;
 
         @include breakpoint-down(lg) {
             top: 6%;
